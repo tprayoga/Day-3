@@ -1,15 +1,15 @@
 function submitData () {
         let name = document.getElementById('input-name').value
-        let email = document.getElementById('input-name').value
-        let phone = document.getElementById('input-name').value
-        let subject = document.getElementById('input-name').value
-        let message = document.getElementById('input-name').value
+        let email = document.getElementById('input-email').value
+        let phone = document.getElementById('input-phone').value
+        let subject = document.getElementById('input-subject').value
+        let message = document.getElementById('input-messege').value
 
         console.log(name)
-        console.log(name)
-        console.log(name)
-        console.log(name)
-        console.log(name)
+        console.log(email)
+        console.log(phone)
+        console.log(subject)
+        console.log(message)
 
 
         if (name == '' ) {
@@ -25,11 +25,11 @@ function submitData () {
         }
 
 
-        let emailReciver = 'tprayoga707@gmail.com'
+        //let emailReciver = 'tprayoga707@gmail.com'
 
         let a = document.createElement ('a')
 
-        a.href = `mailto:${emailReciver}?subject=${subject}&body=Hallo my name ${name} ${message} please call me ${phone}`
+        a.href = `mailto:${email}?subject=${subject}&body=Hallo my name ${name} ${message} please call me ${phone}`
 
         a.click ()
 
@@ -42,4 +42,5 @@ function submitData () {
         }
 
         console.log(dataObject)
+        window.location.reload()
     }
